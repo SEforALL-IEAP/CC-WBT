@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use FinanCCe, please cite the software and the framework it implements."
+type: software
+title: "FinanCCe: An open-source financial modelling platform for clean cooking transitions"
+authors:
+  - family-names: "Garrido García-Pita"
+    given-names: "Almudena"
+    affiliation: "Instituto de Investigación Tecnológica, Universidad Pontificia Comillas"
+  - family-names: "Díaz-Pastor"
+    given-names: "Santos J."
+    affiliation: "Instituto de Investigación Tecnológica, Universidad Pontificia Comillas"
+  - family-names: "Dueñas Martínez"
+    given-names: "Pablo"
+    affiliation: "Instituto de Investigación Tecnológica, Universidad Pontificia Comillas"
+repository-code: "https://github.com/SEforALL-IEAP/CC-WBT"
+license: AGPL-3.0-or-later
+keywords:
+  - clean cooking
+  - energy access
+  - financial modelling
+  - viability gap
+  - blended finance
+references:
+  - type: article
+    title: "From least-cost plans to implementable electrification: A regulatory–financial framework to achieve universal access"
+    authors:
+      - family-names: "Díaz-Pastor"
+        given-names: "Santos J."
+      - family-names: "de Abajo"
+        given-names: "Carlos"
+      - family-names: "Stoner"
+        given-names: "Robert"
+      - family-names: "Pérez-Arriaga"
+        given-names: "Ignacio J."
+    journal: "Utilities Policy"
+    volume: 101
+    year: 2026
+    doi: "10.1016/j.jup.2026.102221"
+  - type: article
+    title: "An integrated regulatory–financial proposal for universal electrification in Uganda beyond the Umeme concession"
+    authors:
+      - family-names: "Díaz-Pastor"
+        given-names: "Santos J."
+      - family-names: "Pérez-Arriaga"
+        given-names: "Ignacio J."
+    journal: "Energy Economics"
+    volume: 152
+    year: 2025
+    doi: "10.1016/j.eneco.2025.109033"
