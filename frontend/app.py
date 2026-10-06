@@ -2,6 +2,8 @@ import streamlit as st
 from state.session import init_session_state
 import home, country_selector, main_dashboard
 
+st.set_page_config(page_title="FinanCCe", page_icon="public/financce_icon.png")
+
 st.markdown("""
     <style>
     .main .block-container {

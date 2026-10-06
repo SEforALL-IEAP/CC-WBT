@@ -3,9 +3,11 @@ import streamlit as st
 
 def show():
 
+    financce_path = "public/financce_logo.png"
     niccp_path = "public/niccp_logo.png"
     se4all_path = "public/se4all_logo.png"
     iit_path = "public/iit_logo.png"
+    financce_base64 = u.get_base64_of_bin_file(financce_path)
     niccp_base64 = u.get_base64_of_bin_file(niccp_path)
     se4all_base64 = u.get_base64_of_bin_file(se4all_path)
     iit_base64 = u.get_base64_of_bin_file(iit_path)
@@ -37,6 +39,7 @@ def show():
 
     st.markdown(f'''
                 <div class="header">
+                <img src="data:image/png;base64,{financce_base64}" alt="FinanCCe" />
                 National Integrated Clean Cooking Plan (NICCP)
                 <img src="data:image/png;base64,{niccp_base64}" />
                 <img src="data:image/png;base64,{se4all_base64}" />

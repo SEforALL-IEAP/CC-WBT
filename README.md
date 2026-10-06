@@ -1,6 +1,9 @@
 <div align="center">
 
-# FinanCCe
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/financce_logo_dark.svg">
+  <img src="docs/img/financce_logo.svg" alt="FinanCCe" width="380">
+</picture>
 
 ### Open-source financial feasibility for clean cooking transitions at country scale
 
@@ -94,19 +97,27 @@ flowchart LR
 
 For each fuel market and scenario, the Regulatory Asset Base evolves as
 
-$$RAB_t = RAB_{t-1} + CAPEX_t - D\&A_t$$
+```math
+RAB_t = RAB_{t-1} + CAPEX_t - D\&A_t
+```
 
 The annual cost of service is
 
-$$ACoS_t = WACC \cdot RAB_t + OPEX_t + D\&A_t + \Delta WC_t + Upstream_t + Taxes_t$$
+```math
+ACoS_t = WACC \cdot RAB_t + OPEX_t + D\&A_t + \Delta WC_t + Upstream_t + Taxes_t
+```
 
-where $\Delta WC_t$ is the change in working capital and $Upstream_t$ the cost of the energy commodity (e.g. imported LPG, electricity for the cooking load). The allowed return uses the weighted average cost of capital, with the tax shield on debt:
+where $`\Delta WC_t`$ is the change in working capital and $`Upstream_t`$ the cost of the energy commodity (e.g. imported LPG, electricity for the cooking load). The allowed return uses the weighted average cost of capital, with the tax shield on debt:
 
-$$WACC = \frac{E}{E+D}\, r_E + \frac{D}{E+D}\, r_D\,(1-\tau)$$
+```math
+WACC = \frac{E}{E+D}\, r_E + \frac{D}{E+D}\, r_D\,(1-\tau)
+```
 
 The viability gap, reported as *long-term subsidies*, is the shortfall of tariff revenues against the cost of service, floored at zero:
 
-$$LTS_t = \max\{0,\; ACoS_t - TariffRev_t\}$$
+```math
+LTS_t = \max\{0,\; ACoS_t - TariffRev_t\}
+```
 
 The circular dependency between taxes, support and cost of service is solved iteratively (see `CIRCULAR_MAX_ITER` and `CIRCULAR_TOLERANCE` in `backend/excel_formula_engine.py`). Carbon credit income is computed against a reserved **Baseline** scenario from the certified share of avoided emissions, market liquidity, the price per tonne and the crediting period, and is reported separately from the financial statements.
 
@@ -513,9 +524,9 @@ If you use FinanCCe, please cite the software and the framework it implements:
 **Related publications**
 
 - Díaz-Pastor, S. J., & Pérez-Arriaga, I. J. (2025). An integrated regulatory–financial proposal for universal electrification in Uganda beyond the Umeme concession. *Energy Economics*, 152, 109033. https://doi.org/10.1016/j.eneco.2025.109033
+- Díaz-Pastor, S. J., Liu, Y., & Pérez-Arriaga, I. J. (2026). *Not too much, not too little: A Goldilocks approach to sustainable, universal electricity access in Sub-Saharan Africa* (Policy Research Working Paper 11439). World Bank. [Link](https://openknowledge.worldbank.org/entities/publication/a175e5e7-af81-4b4e-8813-3316124200fd)
 - de Cuadra, F., Dueñas, P., Sánchez-Jacob, E., Díaz-Pastor, S., Rico, O., Palacios, R., Pérez-Arriaga, I. J., Domínguez, C., Mazzoni, D., & Narayan, N. (2025). *Models and tools for Integrated Clean Cooking Planning: Case example of Rwanda* (IIT Working Paper IIT-24-371WP). Instituto de Investigación Tecnológica, Universidad Pontificia Comillas. [Link](https://www.iit.comillas.edu/publicacion/workingpaper/en/539/Models_and_tools_for_Integrated_Clean_Cooking_Planning._Case_example_of_Rwanda)
-- Sustainable Energy for All, Universidad Pontificia Comillas, & Massachusetts Institute of Technology. (2026). *The National Integrated Clean Cooking Planning (NICCP)*. [Link](https://www.seforall.org/publications/the-national-integrated-clean-cooking-planning)
-- Díaz-Pastor, S. J., Liu, Y., & Pérez-Arriaga, I. J. (2026). *Not too much, not too little: A Goldilocks approach to sustainable, universal electricity access in Sub-Saharan Africa* (Policy Research Working Paper 11439). World Bank.
+- de Cuadra, F., Dueñas, P., Sánchez-Jacob, E., Díaz-Pastor, S., Rico, O., Palacios, R., Pérez-Arriaga, I. J., Mateo, C., García-Amorena, F., Lee, S. J., González-García, A., Domínguez, C., Mazzoni, D., & Narayan, N. (2026). *Rwanda: National Integrated Clean Cooking Plan report* (IIT Technical Report IIT-26-057I). Instituto de Investigación Tecnológica, Universidad Pontificia Comillas. Published by Sustainable Energy for All: [Link](https://www.seforall.org/publications/the-national-integrated-clean-cooking-planning)
 - Garrido García-Pita, A. (2026). *Financial modelling platform to promote the adoption of clean cooking technologies* [Bachelor's thesis, Universidad Pontificia Comillas, ICAI].
 
 ---
