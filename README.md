@@ -31,7 +31,7 @@ FinanCCe enables side-by-side comparison of different financing strategies appli
 > [!NOTE]
 > **Why FinanCCe?** Techno-economic planning tools tell planners *which* clean cooking technologies households should adopt, where, and when. They do not tell them whether that plan can be **financed**: they produce no financial statements, do not model how tariffs recover costs, and do not quantify the support a plan requires. FinanCCe supplies that missing layer. It implements, for clean cooking, the regulatory–financial framework for universal access of Díaz-Pastor et al. (2026) and Díaz-Pastor & Pérez-Arriaga (2025), and it grounded the financial analysis of **Rwanda's National Integrated Clean Cooking Planning** (SEforALL, Universidad Pontificia Comillas & MIT, 2026).
 
-| | |
+| Feature | What it does |
 |---|---|
 | 📊 **Integrated financial statements** | P&L, balance sheet and cash flow for every fuel market and scenario, with the balance-sheet identity enforced in every period |
 | 🕳️ **Viability gap, as an output** | The yearly support a plan needs to stay viable is computed from cost of service and revenues, never assumed |
@@ -184,6 +184,9 @@ python --version
 - **Git** (optional but recommended)  
   Required only if you choose to clone the repository instead of downloading it as a ZIP.
 
+> [!IMPORTANT]
+> **Operating system.** FinanCCe is currently developed and tested on **Windows**. On macOS and Linux the application starts, but the calculation engine does not yet resolve the formula files correctly, so results are not computed. Cross-platform support is in progress.
+
 ---
 
 ## Quickstart
@@ -209,7 +212,7 @@ If you prefer not to use Git, you can download the repository as a ZIP file:
 4. Open a terminal and navigate to the extracted folder:
 
 ```bash
-cd CC-WBT
+cd CC-WBT-main
 ```
 
 Once the source code is available locally (via cloning or download), you can proceed with environment setup and installation.
